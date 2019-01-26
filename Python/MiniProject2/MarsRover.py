@@ -6,6 +6,7 @@ rover.
 import sys
 import pygame as pg  # Imports pygame as pg for clarity when used.
 from pygame import *
+import time as ti
 from random import randint, random, uniform  # Imports select functions from random
 from math import sin, cos, radians  # Imports select functions from math
 
@@ -149,5 +150,5 @@ class MarsRover(pg.sprite.Sprite):
             return True
 
 
-rover = MarsRover("lander.png", [randint(0, 1120), 0])  # The Rover
+rover = MarsRover("Sprites/lander.png", [randint(0, 1120), 0])  # The Rover
 

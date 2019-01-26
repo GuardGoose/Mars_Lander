@@ -17,8 +17,8 @@ game_clock = pg.time.Clock()  # Sets game clock
 
 pg.event.set_blocked(MOUSEMOTION)  # User cannot use the mouse
 screen = pg.display.set_mode((1200, 750))  # Sets screen size
-rover = MarsRover("lander.png", [randint(0, 1120), 0])  # Sets the rover
-BackGround = Background('mars_background_instr.png', 0, 0)  # Sets the background image
+rover = MarsRover("Sprites/lander.png", [randint(0, 1120), 0])  # Sets the rover
+BackGround = Background('Sprites/mars_background_instr.png', 0, 0)  # Sets the background image
 pg.display.set_caption("Mars Lander")  # Sets caption
 game_score = 0  # Sets game_score to zero
 
@@ -63,7 +63,7 @@ while not rover.mars_game_over():
             rover.reset_stats()  # Respawns rover.
         else:
             MarsRover.crashed()  # Calls the crashed function
-            pg.time.wait(60)  # Waits 10 milliseconds
+            pg.time.wait(10)  # Waits 10 milliseconds
             pg.event.clear()  # Clears event so the user can press a button
             event = pg.event.wait()  # Waits for event to happen
             if event.type == QUIT:  # Still gives the user an option to quit
@@ -91,7 +91,7 @@ while not rover.mars_game_over():
             rover.move_right()
         # If key_pressed is true and key_disabled is not 3
         if keys_pressed[pg.K_SPACE] and MarsRover.key_disable() is not 3:  # If both are True
-            thrust = Thrust('thrust.png', rover.rect.left + 31, rover.rect.bottom - 12)
+            thrust = Thrust('Sprites/thrust.png', rover.rect.left + 31, rover.rect.bottom - 12)
             thrust.rotated()  # Calls the rotate function
             rover.engine()  # Calls the engine function
             screen.blit(thrust.image_rotated, thrust.rect)  # Displays the rotated image

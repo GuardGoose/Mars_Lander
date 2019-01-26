@@ -18,7 +18,7 @@ WIDTH = 1200
 HEIGHT = 720
 game_clock = pg.time.Clock()
 
-rover = MarsRover("lander.png", [randint(0, 1120), 0])
+rover = MarsRover("Sprites/lander.png", [randint(0, 1120), 0])
 
 
 class Sprite(pg.sprite.Sprite):
