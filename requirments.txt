@@ -1,0 +1,6 @@
+Core Requirments
+
+Python3
+Pygame
+Sys
+Math
