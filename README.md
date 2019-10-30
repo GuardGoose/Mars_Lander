@@ -13,12 +13,19 @@ CONTROLS:
 Description:
 
 • The player as 3 lives.
+
 • The player starts with 0% damage; 100% resulting in a crash and lost life
+
 • The lander begins at a random position 1000m above the surface, it can wrap around the left and right of the screen, but it cannot go   any higher than the top of the screen
+
 • Each lander has 500kf of rocket fuel, and each time the thrust (spacebar) is used it uses 5kg of rocket fuel
+
 • When the thrust is used there's a small image to illustrate the it has been used
+
 • Three landing pads are randomly generated on the map; if the lander misses then it will crash. If lander lands on a pad with             horizontal velocity (veloc_x) < 5.0 m/s and vertical velocity (veloc_y) < 5.0 m/s then the user is rewarded with 50 points and the       lander does not crash
+
 • There are 5 randomly generated obstacles, if the lander collides with them it will undergo 25% damage
+
 • During a mission, various instruments display flight data to the player. These are: time (mins:secs) since start of the mission; fuel   (kg); damage (%age); altitude (m); x-velocity (m/s); y-velocity (m/s). These are updated continuously in the top-left (instrument       panel) region of the main game screen.
 
 The following equations are used for the small physics engine of the game:
@@ -32,6 +39,7 @@ Gravity acts as a puller so when the lander is at rest it will begin its desent 
 Issues:
 
 • If the user crashes on the surface sometimes the game won't restart when the user presses spacebar to restart. 
+
 • Sometimes the damange from collision can jump straight to 100%
 
 
