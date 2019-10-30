@@ -7,7 +7,9 @@ In the game, players control a space vehicle as it makes its approach to the sur
 CONTROLS:
 
 • Tilt Right (1 degree) = right-arrow key
+
 • Tilt Left (1 degree) = left-arrow key
+
 • Thrust = Spacebar
 
 Description:
