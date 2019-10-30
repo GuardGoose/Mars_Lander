@@ -18,7 +18,7 @@ Description:
 
 • The lander begins at a random position 1000m above the surface, it can wrap around the left and right of the screen, but it cannot go   any higher than the top of the screen
 
-• Each lander has 500kf of rocket fuel, and each time the thrust (spacebar) is used it uses 5kg of rocket fuel
+• Each lander has 500kg of rocket fuel, and each time the thrust (spacebar) is used it uses 5kg of rocket fuel
 
 • When the thrust is used there's a small image to illustrate the it has been used
 
